@@ -226,13 +226,14 @@
 						<p><i class="fa fa-phone"></i> 615 06 13 75</p>
 						<p><i class="fa fa-envelope"></i> balonmanosolidario@colegiosanagustin.net</p>
 						<p><i class="fa fa-twitter"></i> @BMSanagus</p>
-						<p><script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ2P2J1LJo7oEu41IRmg5PgDe5vt5Kyzo&sensor=false&extension=.js'></script> 
+						<p><script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ2P2J1LJo7oEu41IRmg5PgDe5vt5Kyzo&extension=.js'></script> 
  
 <script> 
     google.maps.event.addDomListener(window, 'load', init);
     var map;
     function init() {
         var mapOptions = {
+            center: new google.maps.LatLng(41.616722,-4.730289),
             zoom: 16,
             zoomControl: true,
             zoomControlOptions: {
@@ -244,6 +245,7 @@
                 style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
             },
             scaleControl: true,
+            scrollwheel: false,
             panControl: true,
             streetViewControl: true,
             draggable : true,
